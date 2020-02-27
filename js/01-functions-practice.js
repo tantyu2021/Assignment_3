@@ -38,4 +38,20 @@ function findModulus(num1, num2) {
 }        
 findModulus(4, 10)  
 
-//STEP 5 - 5.	Create a JavaScript function that accepts a certain amount of numbers as parameters. Those numbers should be collected using a prompt and the numbers should be delimited by commas. Once the values are collected, find the sum of all of the numbers combined. You will need to use a function, loop, arguments object, and several type conversion global functions to accomplish this task.
+//STEP 5.	Create a JavaScript function that accepts a certain amount of numbers as parameters. Those numbers should be collected using a prompt and the numbers should be delimited by commas. Once the values are collected, find the sum of all of the numbers combined. You will need to use a function, loop, arguments object, and several type conversion global functions to accomplish this task.
+console.log("STEP 5")
+let sumN = 0, numS, a;
+for (a = 0; a < 3; a += 1) {
+while (true) {
+numS = parseInt(window.prompt("Enter the number"), 10);
+if (numS >= 0 && numS <= 1000) {
+sumN += numS;
+break;
+} else {
+window.document.write("Sum is " + sumN);
+}
+}
+}
+window.document.write("Sum is " + sumN);
+console.log("Sum is " + sumN);
+        
